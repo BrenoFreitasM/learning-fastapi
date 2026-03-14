@@ -8,5 +8,6 @@ class UserFinder:
         users = await self.__users_repository.get_users_by_name(user_name)
         return {
             "type": "USERS",
-            "count": len(users)
+            "count": len(users),
+            "atributtes": users
         }
